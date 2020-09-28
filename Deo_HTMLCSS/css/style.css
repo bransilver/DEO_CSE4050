@@ -42,6 +42,13 @@
      display: table-column-group;
 }
 
+#testbar{
+     background:pink;
+     padding: 30px;
+     float: left;
+     display: table-column-group;
+}
+
 #footer{
      background:orangered;
      padding: 30px;
