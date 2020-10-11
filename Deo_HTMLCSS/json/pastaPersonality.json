@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Spaghetti",
+        "personality":"quirky, loves to have fun",
+        "age estimate": 22,
+        "height":"short"
+    },
+
+    {
+        "name":"Alfredo",
+        "personality":"mellow, goes with the flow",
+        "age estimate": 28,
+        "height":"average"
+    },
+
+    {
+        "name":"Carbonara",
+        "personality":"sophisticated, has exquisite taste in fashion",
+        "age estimate": 35,
+        "height":"tall"
+    }
+]
