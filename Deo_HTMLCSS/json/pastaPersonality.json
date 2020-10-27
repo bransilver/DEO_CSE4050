@@ -1,22 +1,30 @@
-[
+ const pasta = [
     {
-        "name":"Spaghetti",
-        "personality":"quirky, loves to have fun",
+        "name": "Spaghetti",
+        "personality": "quirky, loves to have fun",
         "age estimate": 22,
-        "height":"short"
+        "height": "short"
     },
 
     {
-        "name":"Alfredo",
-        "personality":"mellow, goes with the flow",
+        "name": "Alfredo",
+        "personality": "mellow, goes with the flow",
         "age estimate": 28,
-        "height":"average"
+        "height": "average"
     },
 
     {
-        "name":"Carbonara",
-        "personality":"sophisticated, has exquisite taste in fashion",
+        "name": "Carbonara",
+        "personality": "sophisticated, has exquisite taste in fashion",
         "age estimate": 35,
-        "height":"tall"
+        "height": "tall"
     }
-]
+];
+
+const pastaOToS = JSON.stringify(pasta);
+
+console.log(typeof pastaOToS);
+
+const pastaSToO = JSON.parse(pastaOToS);
+
+console.log(pastaSToO[1].personality);
