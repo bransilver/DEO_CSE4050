@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "faker": "^5.1.0"
+  }
+}

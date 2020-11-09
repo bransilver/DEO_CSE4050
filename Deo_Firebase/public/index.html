@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEO CSE4050</title>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>  
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBryWS8UI_eju2UfDu03xG72yvOb3U9k5I",
+    authDomain: "deo-cse4050.firebaseapp.com",
+    databaseURL: "https://deo-cse4050.firebaseio.com",
+    projectId: "deo-cse4050",
+    storageBucket: "deo-cse4050.appspot.com",
+    messagingSenderId: "812880340115",
+    appId: "1:812880340115:web:3738b117dd083be1cf9966",
+    measurementId: "G-BMWPN7ZTM3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="app.js" defer></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"
+integrity="sha512-/seDHxVfh1NvFUscAj8GsHQVZJvr2jjAoYsNL7As2FCaFHUHYIarl3sRCvVlFgyouVNiRgHIebyLKjpgd1SLDw=="
+crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <h1>Is life Real</h1>
+  <p>Nareun wonhae tonight</p>
+
+  <section id="whenSignedOut">
+    <button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
+  </section>
+
+  <section id="whenSignedIn" hidden="true">
+    <div id="userDetails"></div>
+    <button id="signOutBtn" class="btn btn-primary">Sign Out</button>
+  </section>
+
+  <section>
+    <ul id="yeetList">
+
+    </ul>
+    <button id="createYeet" class="btn btn-success">Create A Yeet</button>
+  </section>
+
+</body>
+</html>
