@@ -28,6 +28,11 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+
+  const db = firebase.firestore();
+
+  db.settings({timestampsInSnapshots: true});
+
 </script>
 
 <script src="app.js" defer></script>
@@ -48,6 +53,8 @@ crossorigin="anonymous"></script>
   <section id="whenSignedOut">
     <button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
   </section>
+
+
 
   <section id="whenSignedIn" hidden="true">
     <div id="userDetails"></div>
